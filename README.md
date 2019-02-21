@@ -25,36 +25,35 @@ Before building a model I started with data cleaning and performed following ste
 
 
 ## Feature engineering process
+## --------
+1.	Created features related to Date
+ o	Year
+ o	Month
+ o	Week Number
+ o	Quarter
+ o	Year Month
+ o	Weekday
+ o	Weekend Flag
 
+2.	Features related to Promo (Daily Promotions)
+ o	I created promotion interval using following breakdown in order to compare the months with the current month so that I could capture whether there is an interval periodic promotion going on or not on each day.
 
-#### 1.	Created features related to Date
-##### o	Year,
-##### o	Month
-##### o	Week Number
-##### o	Quarter
-##### o	Year Month, 
-##### o	Weekday
-##### o	Weekend Flag
+ 	Jan, Apr, Jul, Oct = 1
+ 	Feb, May, Aug, Nov = 2
+ 	Mar, Jun, Sept, Dec = 3 
 
-#### 2.	Features related to Promo (Daily Promotions)
-##### o	I created promotion interval using following breakdown in order to compare the months with the current month so that I could capture whether there is an interval periodic promotion going on or not on each day.
+3.	Features related to Promo2 (Interval Periodic Promotions)
+ o	Whether the promotion is ongoing or not
 
-###### 	Jan, Apr, Jul, Oct = 1
-###### 	Feb, May, Aug, Nov = 2
-###### 	Mar, Jun, Sept, Dec = 3 
-
-#### 3.	Features related to Promo2 (Interval Periodic Promotions)
-##### o	Whether the promotion is ongoing or not
-
-#### 4.	Features related to Competition:
-##### o	Competition open - Whether the competition is open or not
+4.	Features related to Competition:
+ o	Competition open - Whether the competition is open or not
 To calculate whether competition is open or not, I compared competition since year with actual year/months. Actual < open. If comp is open then I also calculated the comp. open months
 
-#### 5.	Modified the feature 'StateHoliday' to binary 
+5.	Modified the feature 'StateHoliday' to binary 
 
-#### 6.	Features related to Sales 
-##### o	Calculated Average quarterly sales
-##### o	Calculated Monthly Total Sales
+6.	Features related to Sales 
+ o	Calculated Average quarterly sales
+ o	Calculated Monthly Total Sales
 
-#### 7.	Features related to Customers
-##### o	Calculated Monthly Total Number of Customers
+7.	Features related to Customers
+ o	Calculated Monthly Total Number of Customers
