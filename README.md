@@ -55,3 +55,34 @@ To calculate whether competition is open or not, I compared competition since ye
 
 #### 7.	Features related to Customers
 ##### o	Calculated Monthly Total Number of Customers
+
+
+## Summary of Analysis & Findings from All the models
+
+#### Model 1: Linear Regression
+##### 1.	Split the data into target and predictor variables
+##### 2.	Fit the linear model with all features
+##### 3.	Predict the Sales for the test data set								
+		
+#### Model 2: Linear Regression (with selected features)
+##### 1.	Split the data into target and predictor variables
+##### 2.	Dropped features - CompetitionDistance' and 'NumOfCompetitionOpenMonths because for stores that don’t have competition at certain time, the competition distance and number of competition open months will be NAs. 
+##### 3.	Fit the linear model
+##### 4.	Predict the Sales for the test data set								
+
+Linear regression with feature selection performs slightly better than the model with all features
+
+#### Model 3: Random Forest
+##### 1.	Split the data into target and predictor variables
+##### 2.	Use grid search to perform hyper-parameter tuning
+##### 3.	Fit the random forest model with all features
+##### 4.	Predict the Sales for the test data set									
+
+#### Model 4: Random Forest (with Feature Selection)
+##### 1.	Split the data into target and predictor variables
+##### 2.	Use grid search to perform hyper-parameter tuning
+##### 3.	Plot feature importance for random forest model and consider top 8 features 
+##### 4.	Fit the random forest on selected features
+##### 5.	Predict the Sales for the test data set	
+
+Random Forest with all features performs better than the model with feature selection
