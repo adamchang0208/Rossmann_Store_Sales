@@ -110,3 +110,9 @@ Random Forest with all features performs better than the model with feature sele
 ##### 6.	Predict the Sales for the test data set								
 
 XGBoost with all features performs better slight better at private leaderboard however the model with feature selection better at public leaderboard
+
+## Conclusion
+As we compared hyperparameters across different models, we found that there was a point when changing our features for XGBoost was not helping to increase RMSE. It seems that it is better to have less complex models that can be communicated easily than more complex with many hyperparameters that is harder to communicate. The best model was Random Forest with all features that we engineered.
+
+Random forest achieves a lower test error solely by variance reduction. We set the hyper-parameters using grid search cross validation. The reason Random Forest is performing well without feature selection is because it performs implicit feature selection and provide a pretty good indicator of feature importance. It handles binary features, categorical features, and numerical features without any need for scaling. 
+
