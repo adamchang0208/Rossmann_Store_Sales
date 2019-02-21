@@ -86,3 +86,27 @@ Linear regression with feature selection performs slightly better than the model
 ##### 5.	Predict the Sales for the test data set	
 
 Random Forest with all features performs better than the model with feature selection
+
+#### Model 5: XGBoost (Without Feature Selection)	
+##### 1.	Split the data into target and predictor variables
+##### 2.	Use grid search to perform hyper-parameter tuning
+##### 3.	Fit the XGBoost model based on hyper-parameter settings
+##### 4.	Predict the Sales for the test data set	
+
+#### Model 6: XGBoost (With Feature Selection)
+##### 1.	Split the data into target and predictor variables
+##### 2.	Use grid search to perform hyper-parameter tuning
+##### 3.	Fit the XGBoost model based on hyper-parameter settings on selected features
+##### 4.	Plot feature importance for XGB boost model and consider top 25 features 
+##### 5.	Fit the XGBoost model on selected features using hyper-parameter settings
+##### 6.	Predict the Sales for the test data set
+
+#### Model 7: XGBoost (With Feature Selection)
+##### 1.	Split the data into target and predictor variables
+##### 2.	Use grid search to perform hyper-parameter tuning
+##### 3.	Fit the XGBoost model based on hyper-parameter settings on selected features
+##### 4.	Plot feature importance for XGB boost model and consider top 10 features 
+##### 5.	Fit the XGBoost model on selected features using hyper-parameter settings
+##### 6.	Predict the Sales for the test data set								
+
+XGBoost with all features performs better slight better at private leaderboard however the model with feature selection better at public leaderboard
