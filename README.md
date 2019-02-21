@@ -1,5 +1,5 @@
 # Rossmann_Store_Sales
-Forecast sales using store, promotion, and competitor data
+Forecast sales using store, promotion, and competitor data (with Linear Regression, Random Forest, and XGBoost models)
 
 This project is based on a Kaggle sales prediction competition: https://www.kaggle.com/c/rossmann-store-sales
 
